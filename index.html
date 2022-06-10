@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+        <title>Digital sustainability</title>
+        <meta name="description" content="The website for digital sustainability is a resource for individuals and organizations to learn about and take action on the issue of digital sustainability. 
+        The website provides information on the issue of digital sustainability.">
+
+        <!-- Stylesheets-->
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+        <!-- Javascript -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <a href="#main-content" class="skip">Skip to main content</a>
+
+        <nav>
+            <ul class="navbar">
+                <li class="nav-link"><a href="#about">About</a></li>
+                <li class="nav-link"><a href="#discussion">Discussion</a></li>
+                <li class="nav-link"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <h1>Digital sustainability</h1>
+        </header>
+
+        <main id="main-content">
+            <section id="about">
+                <h2>About digital sustainability</h2>
+    
+                <p>
+                    Climate change is one of the greatest problems we are facing. 
+                    According to the <a href="https://www.who.int/news-room/fact-sheets/detail/climate-change-and-health">World Health Organisation (WHO)</a>, climate change is expected to cause an additional 250,000 deaths annually between 2030 and 2050.
+                </p>
+    
+                <p>
+                    Digital technology has great potential to help in the fight against climate change, but more needs to be done to ensure that it does not exacerbate the problem further. 
+                    Currently, the internet alone accounts for approximately <a href="https://sustainablewebdesign.org">3.8% of global carbon emissions</a>. 
+                    This is where awareness of digital sustainability comes in.
+                </p>
+    
+                <p>
+                    <a href="https://gerrymcgovern.com">Gerry McGovern</a> is a leading voice in the digital sustainability and e-waste space. 
+                    He uses his platform to educate and spread information about the current state of the digital landscape in relation to climate change.
+                </p>
+            </section>
+
+            <section id="discussion">
+                <h2>Discussion about digital sustainability</h2>
+
+                <p>
+                    Listen to one of Gerry McGovern's talks about the current state of digital sustainability and e-waste.
+                </p>
+    
+                <div class="container">
+                    <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/2HP16hV21JU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>			
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Contact me</h2>
+    
+                <p>If you want to learn more about digital sustainability, contact me using the form.</p>
+    
+                <form action="https://formspree.io/f/xdobpvqn" method="post">
+                    <div class="form-field">
+                        <label for="name">Your name</label>
+                        <input type="text" id="name" autocomplete="name">
+                    </div>
+    
+                    <div class="form-field">
+                        <label for="contact-method">Preferred contact method</label>
+                        <select id="contact-method">
+                            <option value="phone">Phone</option>
+                            <option value="email">Email</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-field" id="email-field">
+                        <label for="email">Your email address (required)</label>
+                        <p class="hint">Your email should look like example@email.com</p>
+    
+                        <input type="email" id="email-field" autocomplete="email" required>
+                    </div>
+    
+                    <div class="form-field" id="tel-field">
+                        <label for="tel">Your mobile number (required)</label>
+    
+                        <input type="tel" id="tel-field" autocomplete="mobile" required>
+                    </div>
+    
+                    <div class="form-field">
+                        <label for="message">Your message (required)</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+    
+                    <button type="submit">Send message</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- Javascript -->
+        	<script>
+		$("#contact-method").change(function() {
+		if ($(this).val() == "email") {
+		$('#email-field').show();
+			$('#tel-field').hide();
+		} else {
+		$('#email-field').hide();
+			$('#tel-field').show();
+		}
+		});
+	
+		$("#contact-method").trigger("change");
+	</script>
+    </body>
