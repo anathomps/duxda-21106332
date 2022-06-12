@@ -128,7 +128,7 @@ header{
     height: 75vh;
     width: 100vw;
     background-color: var(--background-color);
-    background-image: url('img/header.jpg');
+    background-image: url('../img/header.jpg');
     background-size: cover;
     background-position: bottom;
     display: flex;
