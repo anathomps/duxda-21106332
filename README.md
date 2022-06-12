@@ -42,7 +42,7 @@
   <li>Makes it easier to go back and edit later</li>
  </ul>
   
- <h3>Media queries<h3>
+ <h3>Media queries</h3>
   <ul>
     <li>Used to specify changes to specific elements when the screen goes below a certain size</li>
     <li>Placed at the bottom of the css file to make it easier when going back and making changes</li>
