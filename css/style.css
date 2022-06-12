@@ -58,7 +58,6 @@ p{
   
 a{
     color: var(--link);
-    text-decoration: none;
 }
   
 a:hover{
@@ -119,6 +118,10 @@ nav{
   
 .nav-link{
     padding: .5rem 1rem;
+}
+
+.nav-link a{
+    text-decoration: none;
 }
 
   /* Header */
@@ -205,6 +208,11 @@ input, select, textarea{
   
 textarea{
     padding-top: .25rem;
+}
+
+select{
+    font-family: var(--primary-font);
+    font-size: 16px;
 }
 
 :focus{
